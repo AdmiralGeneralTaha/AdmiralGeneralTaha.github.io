@@ -28,6 +28,14 @@ function updateCountdownOpacity() {
   countdownContainer.style.opacity = Math.max(opacity, 0);
 }
 
+
+  if (opacity <= 0) {
+    countdownContainer.style.zIndex = '-1';
+  } else {
+    countdownContainer.style.zIndex = '1';
+  }
+}
+
 window.addEventListener('scroll', updateCountdownOpacity);
 
 
