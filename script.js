@@ -17,8 +17,6 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
-
-
 const countdownContainer = document.querySelector('.countdown-container');
 
 function updateCountdownOpacity() {
@@ -27,6 +25,7 @@ function updateCountdownOpacity() {
 
   countdownContainer.style.opacity = Math.max(opacity, 0);
 
+  // Update z-index when opacity reaches 0
   if (opacity <= 0) {
     countdownContainer.style.zIndex = '-1';
   } else {
@@ -35,8 +34,6 @@ function updateCountdownOpacity() {
 }
 
 window.addEventListener('scroll', updateCountdownOpacity);
-
-
 
 const scrollBtn = document.getElementById('scroll-btn');
 const firstContentSection = document.querySelector('.content-section');
