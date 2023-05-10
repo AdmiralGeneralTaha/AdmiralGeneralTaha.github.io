@@ -26,8 +26,6 @@ function updateCountdownOpacity() {
   const opacity = 1 - (scrollTop / (window.innerHeight * 0.5));
 
   countdownContainer.style.opacity = Math.max(opacity, 0);
-}
-
 
   if (opacity <= 0) {
     countdownContainer.style.zIndex = '-1';
