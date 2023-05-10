@@ -25,7 +25,6 @@ function updateCountdownOpacity() {
 
   countdownContainer.style.opacity = Math.max(opacity, 0);
 
-  // Update z-index when opacity reaches 0
   if (opacity <= 0) {
     countdownContainer.style.zIndex = '-1';
   } else {
