@@ -1,26 +1,66 @@
+/* Variables */
+:root {
+  --main-font: Arial, sans-serif;
+  --main-color: #333;
+  --light-color: #555;
+  --bg-color: #999999;
+}
+
+/* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--main-font);
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
-.countdown-container {
+/* Header section */
+header.countdown-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #999999;
+    background-color: var(--bg-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    transition: opacity 0.5s;
 }
 
-.countdown-container h1 {
+header.countdown-container h1 {
     align-items: center;
 }
 
-#countdown {
-    font-size: 58px;
+header #countdown {
+    font-size: 3.625rem; /* 58px */
     font-weight: bold;
+}
+
+/* Scroll button */
+.scroll-btn {
+    position: absolute;
+    bottom: 1.25rem; /* 20px */
+    left: 50%;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    border: none;
+    border-radius: 500px;
+    background-color: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+    transform: translateX(-50%);
+    font-size: 0.875rem; /* 14px */
+}
+
+.scroll-btn:hover {
+    background-color: var(--light-color);
+}
+
+/* Main content */
+main {
+  margin-top: 100vh;
 }
 
 .content-section {
@@ -31,13 +71,14 @@ body {
 }
 
 .content-section h2 {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem; /* 10px */
     align-items: center;
 }
+
 .content-section p {
     align-items: center;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 25rem; /* 400px */
+    margin-right: 25rem; /* 400px */
 }
 
 .content-section img {
@@ -47,70 +88,23 @@ body {
 }
 
 
-
-.countdown-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  transition: opacity 0.5s;
-}
-
-.content-section {
-  z-index: 1;
-  margin-top: 100vh;
-  align-items: center;
-}
-
-
-
-
-
-.scroll-btn {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 500px;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-    transform: translateX(-50%);
-    font-size: 14px; 
-}
-
-.scroll-btn:hover {
-    background-color: #555;
-}
-
-
-
-@media screen and (max-width: 480px) {
-  .scroll-btn {
-    bottom: 10px; 
-    font-size: 12px; 
-  }
-}
-
-
-
+/* Media queries for responsive design */
 @media screen and (max-width: 767px) {
   .content-section p {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1.25rem; /* 20px */
+    margin-right: 1.25rem; /* 20px */
   }
 }
 
 @media screen and (max-width: 480px) {
   #countdown {
-    font-size: 40px;
+    font-size: 2.5rem; /* 40px */
   }
 }
 
-@media screen and (max-width: 767px) {
-  .countdown-container {
-    align-items: center;
+@media screen and (max-width: 480px) {
+  .scroll-btn {
+    bottom: 0.625rem; /* 10px */
+    font-size: 0.75rem; /* 12px */
   }
 }
