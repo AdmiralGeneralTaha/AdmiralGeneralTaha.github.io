@@ -2,7 +2,7 @@
 const countdownElement = document.getElementById('countdown');
 
 // Set the target date for the countdown
-const targetDate = new Date('2023-07-19T00:00:00');
+const targetDate = new Date('2023-07-20T00:00:00');
 
 // Update the countdown element with the time remaining
 function updateCountdown() {
