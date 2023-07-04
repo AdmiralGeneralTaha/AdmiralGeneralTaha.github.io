@@ -62,7 +62,6 @@ header #countdown {
 main {
   margin-top: 100vh;
 }
-
 .content-section {
     display: flex;
     flex-direction: column;
@@ -107,4 +106,43 @@ main {
     bottom: 0.625rem; /* 10px */
     font-size: 0.75rem; /* 12px */
   }
+}
+
+
+
+
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+<!-- -->
+.card {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 30%;
+  object-fit: cover;
+}
+
+.card .details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
 }
