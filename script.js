@@ -6,15 +6,15 @@ const targetDate = new Date('2023-07-20T00:00:00');
 
 // Update the countdown element with the time remaining
 function updateCountdown() {
-    const currentDate = new Date();
-    const timeRemaining = targetDate - currentDate;
+  const currentDate = new Date();
+  const timeRemaining = targetDate - currentDate;
 
-    const seconds = Math.floor((timeRemaining / 1000) % 60);
-    const minutes = Math.floor((timeRemaining / 1000 / 60) % 60);
-    const hours = Math.floor((timeRemaining / (1000 * 60 * 60)) % 24);
-    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+  const seconds = Math.floor((timeRemaining / 1000) % 60);
+  const minutes = Math.floor((timeRemaining / 1000 / 60) % 60);
+  const hours = Math.floor((timeRemaining / (1000 * 60 * 60)) % 24);
+  const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
 
-    countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
 
 // Call the updateCountdown function immediately and at regular intervals
