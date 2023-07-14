@@ -191,19 +191,26 @@ hr {
 
 .divider {
   width: 90%;
-  max-width: 650px; /* Set a maximum width for the divider */
-  height: 4px; /* Increase the thickness of the divider */
-  background-color: #b8b8b8; /* Set a light gray color for the divider */
-  border-radius: 2px; /* Make the divider rounded */
-  margin: 20px auto; /* Add some space around the divider and center it horizontally */
+  max-width: 650px;
+  /* Set a maximum width for the divider */
+  height: 4px;
+  /* Increase the thickness of the divider */
+  background-color: #b8b8b8;
+  /* Set a light gray color for the divider */
+  border-radius: 2px;
+  /* Make the divider rounded */
+  margin: 20px auto;
+  /* Add some space around the divider and center it horizontally */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .divider-text {
-  background-color: #fff; /* Set the background color of the text */
-  padding: 0 20px; /* Add padding around the text */
+  background-color: #fff;
+  /* Set the background color of the text */
+  padding: 0 20px;
+  /* Add padding around the text */
 }
 
 
