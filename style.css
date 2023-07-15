@@ -84,7 +84,6 @@ hr {
   border-width: 1px;
 }
 
-
 .content-section h2 {
   margin-bottom: 0.625rem;
   /* 10px */
@@ -104,7 +103,6 @@ hr {
   height: auto;
   align-items: center;
 }
-
 
 /* Media queries for responsive design */
 @media screen and (max-width: 767px) {
@@ -212,8 +210,6 @@ hr {
   padding: 0 20px;
   /* Add padding around the text */
 }
-
-
 
 .intro-text {
   text-align: center;
