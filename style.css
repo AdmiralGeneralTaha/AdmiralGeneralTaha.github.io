@@ -174,9 +174,9 @@ hr {
 }
 
 .card img {
-  width: 100%;
+  width: 130%;
   border-radius: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .card .details {
@@ -185,13 +185,14 @@ hr {
 
 .card .details p {
   margin: 5px 0;
+  padding-bottom: 5px;
 }
 
 .divider {
   width: 90%;
   max-width: 650px;
   /* Set a maximum width for the divider */
-  height: 4px;
+  height: 3px;
   /* Increase the thickness of the divider */
   background-color: #b8b8b8;
   /* Set a light gray color for the divider */
