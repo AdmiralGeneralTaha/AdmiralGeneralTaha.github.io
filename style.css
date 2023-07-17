@@ -36,6 +36,18 @@ header #countdown {
   font-weight: 700;
 }
 
+
+@keyframes flash {
+  0%   {opacity: 1;}
+  50%  {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+#countdown {
+  animation: flash 2s ease-in-out infinite;
+}
+
+
 .scroll-btn {
   position: absolute;
   bottom: 1.25rem;
