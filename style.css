@@ -18,7 +18,7 @@ header.countdown-container {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--bg-color);
+  background-color: black;
   position: fixed;
   top: 0;
   left: 0;
@@ -27,26 +27,31 @@ header.countdown-container {
   transition: opacity 0.5s;
 }
 
+#aboveCountdownImage {
+  width: 10%;
+  height: auto;
+  order: 1; /* This will ensure the image is above the text */
+}
+
 header.countdown-container h1 {
   align-items: center;
+  color: red;
+  order: 2; /* This will ensure the text is below the image but above the countdown */
 }
 
 header #countdown {
   font-size: 3.625rem;
   font-weight: 700;
+  color: red;
+  animation: flash 2s ease-in-out infinite;
+  order: 3; /* This will ensure the countdown is below the text */
 }
-
 
 @keyframes flash {
   0%   {opacity: 1;}
   50%  {opacity: 0;}
   100% {opacity: 1;}
 }
-
-#countdown {
-  animation: flash 2s ease-in-out infinite;
-}
-
 
 .scroll-btn {
   position: absolute;
@@ -128,4 +133,11 @@ main {
 
 .majalis-button:hover {
   background-color: var(--light-color);
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 4; /* This will ensure the button container is below the countdown */
+  width: 100%;
 }
